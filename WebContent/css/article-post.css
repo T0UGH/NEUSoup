@@ -1,0 +1,212 @@
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
+    font-weight: 700;
+}
+.article-container{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 300px;
+    background-color: rgba(230,230,230);
+    height: auto;
+    width: 1200px;
+    padding-bottom: 51px;
+}
+.article-header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.article-header>.left-splite-line{
+    flex: 1 1 0%;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 5px solid #050505;
+    box-sizing: content-box;
+}
+.article-header>.right-splite-line{
+    flex: 1 1 0%;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 5px solid #050505;
+    box-sizing: content-box;
+}
+.row{   
+    order: 99;
+    width: 100%;
+}
+#eximg-owl-slider{   
+    display: block;
+    height:auto;
+    margin-left: auto; 
+    margin-right: auto;
+}
+#examine-owl-slider{   
+    display: block;
+    width: 900px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+#owl-slider .post-slide{
+    display: block;
+}
+#owl-slider img{
+    display: block;
+    width: 100%;
+}
+.post-slide{
+    margin: 0 15px;
+}
+.post-slide .post-img{
+    overflow: hidden;
+}
+.post-slide .post-img img{
+    width: 100%;
+    height: auto;
+    transform: scale(1);
+    transition: all 1s ease-in-out 0s;
+}
+.post-slide:hover .post-img img{
+    transform: scale(1.08);
+}
+.post-slide .post-content{
+    background: #fff;
+    padding: 20px;
+}
+.post-slide .post-title{
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 0;
+    text-transform: capitalize;
+}
+.post-slide .post-title a{
+    display: inline-block;
+    color: #808080;
+    transition: all 0.3s ease 0s;
+}
+.post-slide .post-title a:hover{
+    color: #3d3030;
+    text-decoration: none;
+}
+.post-slide .post-description{
+    font-size: 15px;
+    color: #676767;
+    line-height: 24px;
+    margin-bottom: 14px;
+}
+.post-slide .post-bar{
+    padding: 0;
+    margin-bottom: 15px;
+    list-style: none;
+}
+.post-slide .post-bar li{
+    color: #676767;
+    padding: 2px 0;
+}
+.post-slide .post-bar li i{
+    margin-right: 5px;
+}
+.post-slide .post-bar li a{
+    display: inline-block;
+    font-size: 12px;
+    color: #808080;
+    transition: all 0.3s ease 0s;
+}
+.post-slide .post-bar li a:after{
+    content: ",";
+}
+.post-slide .post-bar li a:last-child:after{
+    content: "";
+}
+.post-slide .post-bar li a:hover{
+    color: #3d3030;
+    text-decoration: none;
+}
+.post-slide .read-more{
+    display: inline-block;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    background: #e7989a;
+    border-bottom-right-radius: 10px;
+    text-transform: capitalize;
+    transition: all 0.30s linear;
+}
+.post-slide .read-more:hover{
+    background: #333;
+    text-decoration: none;
+}      
+.zan_tu button{
+	width:40px;
+	height:40px;
+	border-radius:50%;
+	border:0px;
+	background-color:#E0EEE0;
+}
+.zan_tu{
+	display:inline-block;
+	width:32%;
+	text-align:center;
+}
+.comments{
+	text-align:left;
+	margin-left:15%;
+	margin-right:15%;
+    align-items:center;
+}
+.comments hr{
+	width:80%;
+	border-top: 3px solid rgba(87, 102, 103, 0.59);
+}
+.comments p{ 
+	padding:10px 10px;
+	border-radius: 10px;
+	box-shadow:0 3px 10px rgba(0,0,0,0.1), 0 3px 10px  #8B5A2B;
+}
+.showComment_div{
+	text-align:center;
+	width:100%;
+}
+.showComment_button{
+	padding: 6px 10px;
+    border-radius:4px;
+    background-color:rgba(87, 102, 103, 0.59);
+    border: none;
+    color: white;
+    display:inline-block;
+    width:10%;
+}
+.writeComment_button{
+	margin-left:5%;
+	outline: 0;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #7ED321;
+    color: white;
+}           
+.zan{
+	width:32%;
+	display:inline-block;
+	text-align:center;
+}  
+.post-content h5{
+	display:inline-block;
+	width:10px;
+}  
+.page_a{
+	width:100%;
+	text-align:center;
+}
+.page_a a{
+	text-decoration:none;
+	color: 	#2F4F4F;
+}
+.page_a a:hover{
+	text-decoration:none;
+	color: 	#DC143C;
+}

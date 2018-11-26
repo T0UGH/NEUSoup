@@ -1,0 +1,60 @@
+.hidden{
+	cursor:pointer;
+    display: none;
+}
+li{
+	list-style:none;
+	display:inline;
+}
+#edit{
+	width:600px;
+	height:170px;
+	background:#fff;
+	margin:50px auto 30px; 
+	border-radius:5px;
+}
+#edit .input_text{
+	width:560px; 
+	height:200px;
+	margin:0px auto;
+	outline:none;
+	border:1px solid #ddd; 
+}
+#edit .myPicture{
+	width:100px; 
+	height:100px;
+	margin:0px auto;
+	outline:none;
+	border:1px solid #ddd; 
+	display: inline-block;
+}
+#selectPicture{
+	margin-top:20px;
+}
+#tag{
+	width:160px; 
+	height:30px;
+	margin:0px auto;
+	outline:none;
+	border:1px solid #ddd; 
+}
+#unkonwbox{
+	margin-left:440px;
+}
+.submit {
+    color: #FFF;
+    border: none;
+    background: #2DCB74;
+    padding: .5em 1.5em;
+    font-size: 1em;
+    outline: none;
+}
+.submit:hover {
+    color: #fff;
+    background: #DBAC76;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}

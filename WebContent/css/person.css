@@ -1,0 +1,162 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	height:100%;
+	width:100%;
+	margin:0;
+}
+.person_content{
+	width: 100%-330px;
+	margin-left: 330px;
+	display: block;
+}
+.background_wall{
+	background: url(../img/neu.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 600px;
+}
+.person_introduce{
+	margin-top: -200px;
+	margin-bottom: 50px;
+}
+.person_introduce hr{
+	width: 40%;
+	border-top: 5px solid #050505;
+}
+.person_introduce button{
+	display: inline-block;
+	border-radius:50%;
+	border:0px;
+	background-color:#ffffff;
+	width:50px;
+}
+.person_introduce button img{
+	width:22.4px;
+	height:22.4px;
+}
+.gf p{
+	display: inline-block;
+	width:50px;
+}
+#touxiang{
+	width: 150px;
+	height: 150px;
+}
+#nicheng{
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+	font-size: 26px;
+	line-height: 30px;
+}
+#qianming{
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-size: 24px;
+	line-height: 30px;
+}
+#focus img{
+	width:20px;
+	height:20px;
+}
+.person_display{
+	width: 70%;
+	background-color:#C1CDCD;
+	margin:0 15%;
+}
+#history{
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	font-size: 24px;
+	text-align: center;
+	line-height: 40px;
+	
+}
+#zhuxiao{
+	position:relative;
+	top:7px;
+	
+}
+.article{
+	margin:30px 20%;
+	padding:10px 0;
+	background-color:#F0F8FF;
+}
+.tupian{
+        vertical-align: middle;
+        text-align: center;
+        margin:0 15%;
+}
+.tupian img{
+	display:inline-block;
+}
+.time{
+	margin-left:5%;
+}
+.content{
+	margin:0 10%;
+}
+.caozuo{
+	width:100%;
+	height:50px;
+	text-align:center;
+	
+}
+.caozuo button{
+	display: inline-block;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	border:0px;
+	background-color:#F0F8FF;
+}
+.caozuo img{
+	width:20px;
+	height:20px;
+}
+.caozuo p{
+	width:20px;
+	font-size:16px;
+	display:inline-block;
+}
+.comments{
+	text-align:left;
+	margin-left:15%;
+	margin-right:15%;
+    align-items:center;
+}
+.comments hr{
+	width:80%;
+	margin-left:10%;
+	margin-right:10%;
+	border-top: 3px solid rgba(87, 102, 103, 0.59);
+
+}
+.comments p{ 
+	padding:10px 10px;
+	border-radius: 5px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.1), 0 3px 10px  #8B5A2B;
+    font-size: 14px;
+}
+.writeComment_button{
+    padding: 6px 10px;
+    border-radius:4px;
+    background-color:#7ED321;
+    border: none;
+    color: white;
+    display:inline-block;
+    width:15%;
+    
+}
+.person_content a{
+	font-size: 17px;
+    font-weight: 600;
+	display: inline-block;
+    color: #808080;
+}
+.person_content a:hover{
+	color: #3d3030;
+    text-decoration: none;
+}
+
+
+
+

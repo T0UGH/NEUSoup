@@ -1,0 +1,228 @@
+@charset "utf-8";
+/* CSS Document */
+
+.contact-heading p{
+    font-size: 25px;
+    margin: 2em auto 0;
+    width: 80%;
+	font-family: 'Francois One', sans-serif;
+}
+.contact-heading h2{
+	padding-top: 540px;
+	margin:0px;
+	color: #202020;
+    font-size: 3em;
+    font-family: 'Francois One', sans-serif;
+ 
+}
+.contact-heading{
+    text-align: center;
+
+	background:url(../img/neu.png) no-repeat center;
+	width:100%;
+	height:600px;
+	background-size:cover;
+	display: block;
+}
+html{height:100%} 
+body{height:100%;margin:0px;padding:0px} 
+#container{
+	margin-top: 170px;
+	margin-left: 18%;
+	width:65%;
+	height:500px;
+	border:5px solid black;
+}
+.contact-form {
+	margin-top: 50px;
+	margin-left: 18%;
+	padding-bottom: 2em;
+}
+.contact-form h4{
+	margin:0px;
+	margin-bottom:15px;
+	color: #202020;
+    font-size: 2em;
+    font-family: 'Francois One', sans-serif;
+}
+.contact-form input[type="text"] {
+  display: inline-block;
+  background: none;
+  border: 1.5px solid #CBCBCB;
+  width: 35%;
+  outline: none;
+  padding: 10px 15px 10px 15px;
+  font-size: .9em;
+  color: #111111;
+  margin-bottom: 1.5em;
+}
+.contact-form input[type="email"] {
+	display: inline-block;
+	background: none;
+	border: 1.5px solid #CBCBCB;
+	width: 36%;
+	outline: none;
+	padding: 10px 15px 10px 15px;
+	font-size: .9em;
+	color: #111111;
+	margin: 0 1.25em;
+}
+.contact-form textarea {
+	background: none;
+	border: 1.5px solid #CBCBCB;
+	font-family: solid;
+	font-size: 1.5px;
+	color:#CBCBCB;
+	width: 76.5%;
+	display: block;
+	height: 150px;
+	outline: none;
+	font-size: 0.9em;
+	color: #111111;
+	resize: none;
+	padding: 10px 15px 10px 15px;
+	margin-bottom: 1em;
+}
+button.btn1.btn-1.btn-1b {
+    color: #FFF;
+    border: none;
+    background: #2DCB74;
+    padding: .5em 1.5em;
+    font-size: 1em;
+    outline: none;
+}
+button.btn1.btn-1.btn-1b:hover {
+    color: #fff;
+    background: #DBAC76;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    -moz-transition: 0.5s all;
+    -o-transition: 0.5s all;
+    -ms-transition: 0.5s all;
+}
+#left-nav-container{
+	width: 300px;
+	height: 100%;
+	position: fixed;
+	/*background-color: rgba(218,201,166,0.5);*/
+	background-color: rgba(255,255,255);
+	z-index: 10;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-top: 0;
+}
+.nav-list li{
+	width: 100%;
+	position: relative;
+	display: block;
+	height: 50px;
+	/*float: left;*/
+	list-style: none;
+	font-size: 14px;
+	font-family: "Helvetica Neue";
+	line-height: 1.5;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	border-bottom-color: rgba(67, 67, 67, 0.3);
+}
+.nav-list{
+	padding-left: 0;
+	padding-top: 160px;
+}
+.nav-link{
+	position: relative;
+	font-weight: bold;  /*加粗*/
+	padding: 15px 10px;
+	align-items: center;
+	display: -webkit-flex; /* Safari */
+  	display: flex;
+	justify-content: flex-start;
+	color:#434343;/*链接设置*/
+	text-decoration:none
+}
+.nav-link:visited{
+	color:#434343; 
+	text-decoration:none;
+	font-weight:bold;
+}/*访问过的链接设置*/
+.nav-link:hover{
+	color:#434343; 
+	text-decoration:none;
+	font-weight:bold;
+}/*鼠标放上的链接设置*/
+.nav-link::after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 4px;
+	background-color: #1d1d1d;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: auto;
+	top: auto;
+	opacity: 1;
+	transition: all 0s ease;
+	box-sizing: border-box;
+}
+.nav-listitem:hover>.nav-link::after{
+	content: "";
+	display: block;
+	width: calc(100% - 30px);
+	transition: all 0.3s ease;
+}
+/*.nav-list-container>.active>a::after{
+	content: "";
+	display: block;
+	width: calc(100%-30px);
+	transition: all 0.3s ease;
+}*/     
+/*对于已被选中的条目的设置*/
+.brand{
+	height: 50px;
+	width: 100px;
+	left: 20px;
+	top: 30px;
+	position: absolute;
+}
+.nav-footer{
+	margin-bottom: 0px;
+	padding-bottom: 10px;
+	color: #434343;
+	background-color: rgba(0, 0, 0, 0);
+	min-height: 210px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+.nav-footer-list{
+	list-style-type: none;
+}
+.nav-footer-info{
+	min-height: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 13px;
+	margin-bottom: 9px;
+}
+#email::before{
+	content: "\f003";
+	font-size: 13px;
+}
+#phone::before{
+	content: "\f095";
+	font-size: 13px;
+}
+#Weixin::before{
+	content: "\f1d7";
+	font-size: 13px;
+}
+.left-content{
+	margin-left: 330px; 
+	width: 100%-330px;
+}
+

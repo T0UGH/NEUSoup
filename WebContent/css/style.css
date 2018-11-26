@@ -1,0 +1,261 @@
+@charset "utf-8";
+/* CSS Document */
+#left-nav-container{
+	width: 300px;
+	height: 100%;
+	position: fixed;
+	/*background-color: rgba(218,201,166,0.5);*/
+	background-color: rgba(255,255,255);
+	z-index: 10;
+	padding-left: 15px;
+	padding-right: 15px;
+	border-top: 0;
+}
+.nav-list li{
+	width: 100%;
+	position: relative;
+	display: block;
+	height: 50px;
+	/*float: left;*/
+	list-style: none;
+	font-size: 14px;
+	font-family: "Helvetica Neue";
+	line-height: 1.5;
+	border-bottom-style: dotted;
+	border-bottom-width: 1px;
+	border-bottom-color: rgba(67, 67, 67, 0.3);
+}
+.nav-list{
+	padding-left: 0;
+	padding-top: 160px;
+}
+.nav-link{
+	position: relative;
+	font-weight: bold;  /*加粗*/
+	padding: 15px 10px;
+	align-items: center;
+	display: -webkit-flex; /* Safari */
+  	display: flex;
+	justify-content: flex-start;
+	color:#434343;/*链接设置*/
+	text-decoration:none
+}
+.nav-link:visited{
+	color:#434343; 
+	text-decoration:none;
+	font-weight:bold;
+}/*访问过的链接设置*/
+.nav-link:hover{
+	color:#434343; 
+	text-decoration:none;
+	font-weight:bold;
+}/*鼠标放上的链接设置*/
+.nav-link::after{
+	content: "";
+	display: block;
+	width: 0;
+	height: 4px;
+	background-color: #1d1d1d;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: auto;
+	top: auto;
+	opacity: 1;
+	transition: all 0s ease;
+	box-sizing: border-box;
+}
+.nav-listitem:hover>.nav-link::after{
+	content: "";
+	display: block;
+	width: calc(100% - 30px);
+	transition: all 0.3s ease;
+}
+/*.nav-list-container>.active>a::after{
+	content: "";
+	display: block;
+	width: calc(100%-30px);
+	transition: all 0.3s ease;
+}*/     
+/*对于已被选中的条目的设置*/
+.brand{
+	height: 50px;
+	width: 100px;
+	left: 20px;
+	top: 30px;
+	position: absolute;
+}
+.nav-footer{
+	margin-bottom: 0px;
+	padding-bottom: 10px;
+	color: #434343;
+	background-color: rgba(0, 0, 0, 0);
+	min-height: 210px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+}
+.nav-footer-list{
+	list-style-type: none;
+}
+.nav-footer-info{
+	min-height: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+	font-size: 13px;
+	margin-bottom: 9px;
+}
+#email::before{
+	content: "\f003";
+	font-size: 13px;
+}
+#phone::before{
+	content: "\f095";
+	font-size: 13px;
+}
+#Weixin::before{
+	content: "\f1d7";
+	font-size: 13px;
+}
+.left-content{
+	margin-left: 330px; 
+	width: 100%-330px;
+}
+.progress-button {
+	padding: 10px;
+	outline: none;
+	border: none;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 700;
+	letter-spacing: 1px;
+	font-size: 1em;
+	z-index: 50;
+	line-height: 3;
+	overflow: hidden;
+	border-radius: 5px;
+	background: rgba(0,0,0,0.2);
+}
+
+.progress-button .content {
+	position: relative;
+	display: block;
+	z-index: 10;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.progress-button .progress {
+	position: relative;
+	left: 0;
+	background: rgba(0,0,0,0.2);
+	top: 0;
+	width: 0%;
+	opacity: 0;
+	height: 100%;
+	z-index: 0;
+	-webkit-transition: width 0s 0.3s, opacity 0.3s;
+	transition: width 0s 0.3s, opacity 0.3s;
+}
+
+.progress-button.active .progress {
+	opacity: 1;
+	width: 100%;
+	-webkit-transition: width 1.2s;
+	transition: width 1.2s;
+}
+#trigger0{
+
+	height: 650px;
+	width:500px;
+}
+.secret0{
+	top:10px;
+}
+#trigger1,#trigger2{
+	height: 300px;
+	width: 320px;
+}
+.secret1{
+	top:10px;
+	left:850px;
+}
+.secret2{
+	top:10px;
+	left:1200px;
+}
+
+#trigger3{
+	top:-235px;
+	left: 525px;
+	height: 340px;
+	width: 670px;
+}
+.secret3{
+	top:320px;
+	left:850px;
+}
+.favourornot{
+	z-index:100;
+	position: relative;
+	top:-40px;
+	left: 10px;
+	
+
+}
+.favour{
+	margin-right: 20px;
+}
+.secret0,.secret1,.secret2,.secret3{
+	display: inline;
+	position: absolute;
+}
+ .pagination-bar {
+	        position: absolute;
+	 left:800px;
+	 top:650px;
+            font-size: 0px;
+            padding: 20px 0px;
+            text-align: center;
+	
+
+        }
+
+        .pagination-bar a {
+            display: inline-block;
+            padding: 5px 7.5px;
+            text-decoration: none;
+            min-width: 20px;
+            font-size: 16px;
+        }
+
+        .pagination-bar a:not(.disabled) {
+            background-color: #FFF;
+            color: #666;
+            border: 1px solid #BBBBBB;
+        }
+
+        .pagination-bar a.disabled {
+            background-color: #666;
+            color: #FFF;
+            border: 1px solid #444;
+        }
+
+        .page-prev {
+            border-radius: 15px 0px 0px 15px;
+        }
+
+        .page-next {
+            border-radius: 0px 15px 15px 0px
+        }
+
+        .pagination-bar span:not(.active) {
+            display: inline-block;
+            padding: 5px 7.5px;
+            font-size: 16px;
+        }
+
